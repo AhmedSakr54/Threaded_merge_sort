@@ -65,6 +65,8 @@ void merge(int * arr, int lo, int mid, int hi) {
     free(arr1);
     free(arr2);
 }
+
+//Thread function
 void * merge_sort(void * t_data) {
     Thread_data * in_thread = (Thread_data *) t_data;
 
