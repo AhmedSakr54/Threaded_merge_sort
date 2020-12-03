@@ -71,6 +71,7 @@ void * merge_sort(void * t_data) {
     Thread_data * in_thread = (Thread_data *) t_data;
 
     if (in_thread->lo >= in_thread->hi) {
+        pthread_exit(NULL);
         return NULL;
     }
     int mid = (in_thread->lo + in_thread->hi) / 2;
